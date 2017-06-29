@@ -14,7 +14,7 @@
     "production" : {
       "user": "node",
       "host": "174.138.71.140",
-      "repo": "https://github.com/esalling/test-module-2.git",
+      "repo": "https://github.com/esalling23/test-module-2.git",
       "ref": "origin/master",
       "path": "/srv/test-module-2",
       "pre-deploy-local" : "echo 'NPM linking test-module-2 and restarting app.';",
