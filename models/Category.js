@@ -23,7 +23,6 @@ var Category = new keystone.List('Category',
 	{
 		label: 'Categories',
 		singular: 'Category',
-		track: true,
 		autokey: { path: 'key', from: 'name', unique: true },
 	});
 
@@ -45,9 +44,7 @@ Category.add({
 	content: { type: Types.Markdown, label: 'Page Conent', required: true, initial: true, height: 250, toolbarOptions: { hiddenButtons: 'H3,H4,Code' }},
 
 	image: { type: Types.CloudinaryImage, label: 'Category Image', folder: 'uncertainty-dictionary', autoCleanup: true },
-	color: { type: Types.Color, label: 'Theme Color', note: 'Color of text in category listing & header color.' },
-	
-	createdAt: { type: Date, default: Date.now, noedit: true, hidden: true }
+	color: { type: Types.Color, label: 'Theme Color', note: 'Color of text in category listing & header color.' }
 
 });
 
