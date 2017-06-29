@@ -1,0 +1,25 @@
+{
+  "apps" : [{
+    "name": "Test Module 1",
+    "script": "server.js",
+    "env_production": {
+      "NODE_ENV": "production"
+    },
+    "env_staging": {
+      "NODE_ENV": "staging"
+    }
+  }],
+  "deploy" : {
+
+    "production" : {
+      "user": "node",
+      "host": "174.138.71.140",
+      "repo": "https://github.com/esalling/test-module-1.git",
+      "ref": "origin/production",
+      "path": "/srv/test-module-1",
+      "pre-deploy-local" : "echo 'NPM linking repo-name and restarting app.';",
+      "post-deploy" : "npm i ; cd /srv/framework/current/ ; grunt compile --sites=test-module-1 --env production ; NODE_ENV=production pm2 restart server.js -- test-module-1 --env production"
+    }
+
+  }
+}

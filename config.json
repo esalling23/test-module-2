@@ -1,0 +1,8 @@
+{
+	"name": "Test Module",
+	"database": "test-module-1",
+	"subdomain": "subdomain",
+	"admin_nav": { 
+									"index": ["Index"]
+								}
+}
