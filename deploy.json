@@ -1,6 +1,6 @@
 {
   "apps" : [{
-    "name": "Test Module 1",
+    "name": "Test Module 2",
     "script": "server.js",
     "env_production": {
       "NODE_ENV": "production"
@@ -14,11 +14,11 @@
     "production" : {
       "user": "node",
       "host": "174.138.71.140",
-      "repo": "https://github.com/esalling/test-module-1.git",
-      "ref": "origin/production",
-      "path": "/srv/test-module-1",
-      "pre-deploy-local" : "echo 'NPM linking repo-name and restarting app.';",
-      "post-deploy" : "npm i ; cd /srv/framework/current/ ; grunt compile --sites=test-module-1 --env production ; NODE_ENV=production pm2 restart server.js -- test-module-1 --env production"
+      "repo": "https://github.com/esalling/test-module-2.git",
+      "ref": "origin/master",
+      "path": "/srv/test-module-2",
+      "pre-deploy-local" : "echo 'NPM linking test-module-2 and restarting app.';",
+      "post-deploy" : "npm i ; cd /srv/framework/current/ ; grunt compile --sites=test-module-2 --env production ; NODE_ENV=production pm2 restart server.js -- test-module-2 --env production"
     }
 
   }

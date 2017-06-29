@@ -1,7 +1,7 @@
 {
-	"name": "Test Module",
-	"database": "test-module-1",
-	"subdomain": "subdomain",
+	"name": "Test Module 2",
+	"database": "test-module-2",
+	"subdomain": "test-2",
 	"admin_nav": { 
 									"index": ["Index"]
 								}
